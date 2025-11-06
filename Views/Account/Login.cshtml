@@ -1,0 +1,80 @@
+﻿@model MVCDHProject.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+    var returnUrl = @Context.Request.Query["ReturnUrl"];
+}
+<script>
+        function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const rememberedName = getCookie('RememberedName');
+        if (rememberedName) {
+            document.querySelector('#Name').value = rememberedName;
+            document.querySelector('#RememberMe').checked = true;
+            document.querySelector('#Password').focus();
+        }
+    });
+</script>
+
+    <h1 style="text-align:center;font-family:Lucida Handwriting;margin:3rem 0 2rem;font-size:60px">Login</h1>
+<hr class="hr-full-width" />
+<div class="row">
+    <div class="col-md-12">
+        <h3 style="text-align:center;font-family:Lucida Handwriting;">NIT Account</h3>
+        <hr class="mx-n3 mx-md-n5" />
+        <form asp-action="Login" asp-route-ReturnUrl="@returnUrl">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group d-flex justify-content-center">
+                <label asp-for="Name" class="visually-hidden"></label>
+                <input asp-for="Name" class="form-control w-50" value="@Context.Request.Cookies["RememberedName"]" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div><br />
+            <div class="form-group d-flex justify-content-center">
+                <label asp-for="Password" class="visually-hidden"></label>
+                <input asp-for="Password" class="form-control w-50 ali" value="" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Password'" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check d-flex justify-content-center">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Rememberme" />
+                    @Html.DisplayNameFor(model => model.Rememberme)
+                </label>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+                <input type="submit" value="Login" class="btn btn-primary" /> 
+@*                 <input type="reset" value="Reset" class="btn btn-primary" /> *@
+            </div>
+            <div class="form-group">
+                <div class="d-flex justify-content-center">
+                New user? <a asp-action="Register">Click</a> to register?
+                </div>
+                <div class="d-flex justify-content-center">
+                Forgot password? - <a asp-action="ForgotPassword">Click</a> to reset.
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-12">
+        <h3 style="text-align:center;font-family:Lucida Handwriting;">or</h3>
+        <form asp-action="ExternalLogin" asp-route-returnUrl="@returnUrl">
+            <div class="d-flex justify-content-center">
+                <button type="submit" name="Provider" value="Google" class="btn btn-danger">
+                    <i class="fab fa-google me-2"></i> Google
+                </button> &nbsp;
+                <button type="submit" name="Provider" value="Facebook" class="btn btn-primary">
+                    <i class="fab fa-facebook-f me-2"></i> Facebook
+                </button>
+            </div>
+            <br />
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
