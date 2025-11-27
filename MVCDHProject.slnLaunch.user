@@ -1,0 +1,12 @@
+[
+  ***REMOVED***
+    "Name": "New Profile",
+    "Projects": [
+      ***REMOVED***
+        "Path": "MVCDHProject\\MVCDHProject.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+    ***REMOVED***
+    ]
+***REMOVED***
+]
