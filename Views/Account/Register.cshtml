@@ -1,0 +1,72 @@
+﻿@model MVCDHProject.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1 style="text-align:center;font-family:Lucida Handwriting;margin:3rem 0 2rem;font-size:60px">Registration</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Register" class="container align-content-center justify-content-between">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control w-50" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control w-50" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfromPassword" class="control-label"></label>
+                <input asp-for="ConfromPassword" class="form-control w-50" />
+                <span asp-validation-for="ConfromPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control w-50" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobile" class="control-label"></label>
+                <input asp-for="Mobile" class="form-control w-50" />
+                <span asp-validation-for="Mobile" class="text-danger"></span>
+            </div><br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="reset" value="Reset" class="btn btn-primary" />
+            </div>
+            <div>
+                Already registred yet! <a asp-action="Login">Click</a> to Login
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
+@* <div>
+                @Html.LabelFor(S => S.Name)<br /><
+                input type="file" name="selectedFile" class="form-control w-50 align-content-around" style="height:50px"/>
+            </div> *@
+@* <div class="profile-image-container mx-auto mb-4">
+                <input type="file" asp-for="Name" id="profileImageInput"
+                       class="d-none" accept="image/*" />
+                <label for="profileImageInput" class="profile-image-wrapper">
+                    <img id="profileImagePreview"
+                         class="profile-image"
+                         alt="Profile" />
+                    <div class="profile-image-overlay">
+                        <i class="bi bi-camera-fill fs-4"></i>
+                        <span class="small">Change Photo</span>
+                    </div>
+                </label>
+            </div> *@
