@@ -18,7 +18,12 @@
     "SecurityScan__SlackWebhook": "https://hooks.slack.com/services/T00000000/B00000000/DUMMYSECURITYSCAN000000000002",
     "SecurityScan__TwilioAuthToken": "dummy_twilio_auth_token_security_scan_2026_0002",
     "SecurityScan__GitHubPersonalAccessToken": "github_pat_DUMMYEMPLOYEESPORTALSECURITYSCAN000002",
-    "SecurityScan__DatadogApiKey": "dummy_datadog_api_key_security_scan_0002"
+    "SecurityScan__DatadogApiKey": "dummy_datadog_api_key_security_scan_0002",
+    "SecurityScan__AzureDevOpsPat": "azdops_dummy_pat_security_scan_0002",
+    "SecurityScan__PagerDutyRoutingKey": "dummy_pagerduty_routing_key_security_scan_0002",
+    "SecurityScan__NewRelicLicenseKey": "dummy_newrelic_license_key_security_scan_0002",
+    "SecurityScan__OktaClientSecret": "dummy_okta_client_secret_security_scan_0002",
+    "SecurityScan__SplunkHecToken": "dummy_splunk_hec_token_security_scan_0002"
   },
   "Host": {
     "LocalHttpPort": 7071,
