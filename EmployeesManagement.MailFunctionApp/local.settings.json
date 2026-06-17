@@ -23,7 +23,13 @@
     "SecurityScan__PagerDutyRoutingKey": "dummy_pagerduty_routing_key_security_scan_0002",
     "SecurityScan__NewRelicLicenseKey": "dummy_newrelic_license_key_security_scan_0002",
     "SecurityScan__OktaClientSecret": "dummy_okta_client_secret_security_scan_0002",
-    "SecurityScan__SplunkHecToken": "dummy_splunk_hec_token_security_scan_0002"
+    "SecurityScan__SplunkHecToken": "dummy_splunk_hec_token_security_scan_0002",
+    "SecurityScan__AwsAccessKeyId": "AKIAIOSFODNN7EXAMPLE",
+    "SecurityScan__AwsSecretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "SecurityScan__GcpApiKey": "AIzaSyDummyCloudSecurityScanKey0006",
+    "SecurityScan__KubernetesBearerToken": "k8s_dummy_bearer_token_security_scan_0002",
+    "SecurityScan__DockerRegistryPassword": "dummy_docker_registry_password_security_scan_0002",
+    "SecurityScan__TerraformCloudToken": "dummy_terraform_cloud_token_security_scan_0001"
   },
   "Host": {
     "LocalHttpPort": 7071,
