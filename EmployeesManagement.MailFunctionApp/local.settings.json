@@ -13,7 +13,12 @@
     "MailDefaultToName": "QA Inbox",
     "MailDefaultToEmail": "qa-team@employeesportal.local",
     "MailDefaultSubject": "Employees Portal Function mail test",
-    "MailDefaultHtmlBody": "<p>This is a dummy local function mail test from Employees Portal.</p>"
+    "MailDefaultHtmlBody": "<p>This is a dummy local function mail test from Employees Portal.</p>",
+    "SecurityScan__SendGridApiKey": "SG.DUMMYEMPLOYEESPORTALSECURITYSCAN0002",
+    "SecurityScan__SlackWebhook": "https://hooks.slack.com/services/T00000000/B00000000/DUMMYSECURITYSCAN000000000002",
+    "SecurityScan__TwilioAuthToken": "dummy_twilio_auth_token_security_scan_2026_0002",
+    "SecurityScan__GitHubPersonalAccessToken": "github_pat_DUMMYEMPLOYEESPORTALSECURITYSCAN000002",
+    "SecurityScan__DatadogApiKey": "dummy_datadog_api_key_security_scan_0002"
   },
   "Host": {
     "LocalHttpPort": 7071,
