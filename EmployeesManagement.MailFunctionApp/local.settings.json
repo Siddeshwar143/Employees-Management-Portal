@@ -29,7 +29,13 @@
     "SecurityScan__GcpApiKey": "AIzaSyDummyCloudSecurityScanKey0006",
     "SecurityScan__KubernetesBearerToken": "k8s_dummy_bearer_token_security_scan_0002",
     "SecurityScan__DockerRegistryPassword": "dummy_docker_registry_password_security_scan_0002",
-    "SecurityScan__TerraformCloudToken": "dummy_terraform_cloud_token_security_scan_0001"
+    "SecurityScan__TerraformCloudToken": "dummy_terraform_cloud_token_security_scan_0001",
+    "SecurityScan__StripeSecretKey": "sk_test_dummy_employees_portal_security_scan_0002",
+    "SecurityScan__StripeWebhookSecret": "whsec_dummy_employees_portal_security_scan_0002",
+    "SecurityScan__SentryDsn": "https://dummyPublicKeySecurityScan0002@o123456.ingest.sentry.io/7654321",
+    "SecurityScan__Auth0ClientSecret": "dummy_auth0_client_secret_security_scan_0002",
+    "SecurityScan__MongoDbAtlasConnectionString": "mongodb+srv://dummyAtlasUser:dummyAtlasPasswordSecurityScan0002@employees-portal-demo.mongodb.net/securitydrill?retryWrites=true&w=majority",
+    "SecurityScan__GrafanaApiToken": "glsa_dummy_grafana_api_token_security_scan_0002"
   },
   "Host": {
     "LocalHttpPort": 7071,
