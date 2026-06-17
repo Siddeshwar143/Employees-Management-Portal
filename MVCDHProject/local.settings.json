@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SecurityAuditFixture__Scenario": "history-rewrite-validation",
+    "SecurityAuditFixture__Purpose": "dummy-secret-records-for-local-testing-only",
+    "SqlPrimaryConnection": "Server=dummy-sql-01.local;Database=EmployeesPortalPrimary;User Id=emp_portal_primary;Password=DummySqlPassword!2026;TrustServerCertificate=True",
+    "SqlHrReadReplica": "Server=dummy-sql-03.local;Database=EmployeesPortalHR;User Id=emp_portal_hr;Password=DummyHrPassword!2026;TrustServerCertificate=True",
+    "BlobStorageConnection": "DefaultEndpointsProtocol=https;AccountName=employeesportalfilesdev;AccountKey=RFVNTVlfQkxPQl9GSUxFU19LRVlfTE9DQUxfU0NBTl8wMDM=;EndpointSuffix=core.windows.net",
+    "BlobArchiveConnection": "DefaultEndpointsProtocol=https;AccountName=employeesportalarchivedev;AccountKey=RFVNTVlfQkxPQl9BUkNISVZFX0tFWV9MT0NBTF9TQ0FOXzAwNA==;EndpointSuffix=core.windows.net",
+    "ServiceBusPrimaryConnection": "Endpoint=sb://employees-portal-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=RFVNTVlfU0VSVklDRV9CVVNfUFJJTUFSWV9LRVlfTE9DQUxfU0NBTl8wMDM=",
+    "ServiceBusAuditConnection": "Endpoint=sb://employees-portal-audit.servicebus.windows.net/;SharedAccessKeyName=AuditSender;SharedAccessKey=RFVNTVlfU0VSVklDRV9CVVNfQVVESVRfS0VZX0xPQ0FMX1NDQU5fMDA0",
+    "AzureMapsPrimaryKey": "DUMMY-AZURE-MAPS-PRIMARY-KEY-LOCAL-SCAN-003",
+    "AzureMapsSecondaryKey": "DUMMY-AZURE-MAPS-SECONDARY-KEY-LOCAL-SCAN-004",
+    "GoogleMapsApiKey": "AIzaSyDummyScanOnlyEmployeesPortalKey0003",
+    "GoogleMapsPlacesKey": "AIzaSyDummyScanOnlyEmployeesPortalKey0004",
+    "ParativeApiToken": "parative_dummy_token_scan_only_003",
+    "ParativeRefreshToken": "parative_dummy_refresh_scan_only_004"
+  }
+}
