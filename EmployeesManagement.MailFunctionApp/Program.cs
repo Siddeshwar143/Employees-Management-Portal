@@ -23,6 +23,7 @@ var host = new HostBuilder()
         });
 
         services.AddSingleton<ISmtpMailSender, SmtpMailSender>();
+        services.AddSingleton<ISecurityRemediationDrillFactory, SecurityRemediationDrillFactory>();
     })
     .Build();
 
