@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "MailSmtpHost": "smtp.gmail.com",
+    "MailSmtpPort": "465",
+    "MailUseSsl": "true",
+    "MailUsername": "dummy-mailer@employeesportal.local",
+    "MailPassword": "dummy-app-password-for-local-testing",
+    "MailFromName": "Employees Portal QA",
+    "MailFromEmail": "dummy-mailer@employeesportal.local",
+    "MailDefaultToName": "QA Inbox",
+    "MailDefaultToEmail": "qa-team@employeesportal.local",
+    "MailDefaultSubject": "Employees Portal Function mail test",
+    "MailDefaultHtmlBody": "<p>This is a dummy local function mail test from Employees Portal.</p>"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
